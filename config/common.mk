@@ -36,9 +36,30 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # init.d support
 PRODUCT_COPY_FILES += \
-	vendor/fml/prebuilt/common/bin/sysinit:system/bin/sysinit \
-	vendor/fml/prebuilt/common/etc/init.d/00fml:system/etc/init.d/00fml
+	vendor/fml/prebuilt/common/bin/sysinit:system/bin/sysinit
+
+#root
+#PRODUCT_COPY_FILES += \
+#    vendor/fml/prebuilt/common/bin/app_process:system/bin/app_process \
+#    vendor/fml/prebuilt/common/bin/app_process32:system/bin/app_process32 \
+#    vendor/fml/prebuilt/common/bin/app_process32_original:system/bin/app_process32_original \
+#    vendor/fml/prebuilt/common/bin/app_process_init:system/bin/app_process_init \
+#    vendor/fml/prebuilt/common/bin/install-recovery.sh:system/bin/install-recovery.sh \
+#    vendor/fml/prebuilt/common/bin/.ext/.su:system/bin/.ext/.su \
+#    vendor/fml/prebuilt/common/app/SuperSU/SuperSU.apk:system/app/SuperSU/SuperSU.apk \
+#    vendor/fml/prebuilt/common/etc/init.d/00root:system/etc/init.d/00root \
+#    vendor/fml/prebuilt/common/lib/libsupol.so:system/lib/libsupol.so \
+#    vendor/fml/prebuilt/common/xbin/daemonsu:system/xbin/daemonsu \
+#    vendor/fml/prebuilt/common/xbin/su:system/xbin/su \
+#    vendor/fml/prebuilt/common/xbin/sugote:system/xbin/sugote \
+#    vendor/fml/prebuilt/common/xbin/sugote-mksh:system/xbin/sugote-mksh \
+#    vendor/fml/prebuilt/common/xbin/supolicy:system/xbin/supolicy    
 
 PRODUCT_PACKAGES += \
 	CellBroadcastReceiver \
-	Launcher3
+
+# Custom CM packages
+PRODUCT_PACKAGES += \
+    Trebuchet \
+    Apollo \
+    LockClock
