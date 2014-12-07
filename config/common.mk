@@ -1,15 +1,15 @@
 ## Common artas182x Config ##
 
 # Superuser
-#SUPERUSER_EMBEDDED := true
-#SUPERUSER_PACKAGE_PREFIX := com.android.settings.artas182x.superuser
+SUPERUSER_EMBEDDED := true
+SUPERUSER_PACKAGE_PREFIX := com.android.settings.artas182x.superuser
 
-#PRODUCT_PACKAGES += \
-#	Superuser \
-#	su
+PRODUCT_PACKAGES += \
+	Superuser \
+	su
 
-#PRODUCT_PROPERTY_OVERRIDES += \
-#	persist.sys.root_access=1
+PRODUCT_PROPERTY_OVERRIDES += \
+	persist.sys.root_access=3
 
 # Boot animation
 PRODUCT_COPY_FILES += \

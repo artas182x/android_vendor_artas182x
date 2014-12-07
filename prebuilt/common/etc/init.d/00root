@@ -6,4 +6,4 @@
 # SELinux isn't being very kind to us lately, but of course we're fixing that later.
 #/system/bin/setenforce 0
 
-/system/xbin/daemonsu --auto-daemon
+#/system/xbin/daemonsu --auto-daemon
